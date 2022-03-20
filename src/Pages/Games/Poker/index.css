@@ -1,0 +1,110 @@
+.poker {
+  min-height: 100vh;
+}
+
+.poker-nav {
+  padding: 0 10px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  position: sticky;
+  top: 0;
+  height: var(--navbar-sub-poker);
+  z-index: 9;
+  animation: topToBottom 0.3s ease;
+}
+
+.poker-wrap {
+  padding: 10px;
+}
+
+.poker-nav-link {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 20%;
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.poker-nav-link > i {
+  font-size: 20px;
+}
+
+.poker-nav-link.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* POKER HEADER */
+.poker-header,
+.poker-config {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.poker-config {
+  padding: 0 10px 0 20px;
+  height: 40px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.poker-header > h4 {
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+.poker-header-wrap,
+.poker-config-wrap {
+  display: flex;
+  align-items: center;
+}
+.poker-header-wrap i,
+.poker-header-wrap button,
+.poker-header-wrap a {
+  margin: 0 5px;
+}
+.poker-config-wrap i {
+  font-size: 14px;
+  color: #777;
+  height: 35px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.poker-config-wrap i:hover {
+  color: white;
+  background-color: #777;
+}
+
+/* POKER DESCRIPTION */
+.poker-description {
+  margin: 10px 0;
+  margin-left: 30px;
+  font-weight: 500;
+  color: #555;
+  font-size: 18px;
+}
+.poker-config > span {
+  font-weight: 500;
+  color: #555;
+  font-size: 18px;
+}
+
+.poker-body-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

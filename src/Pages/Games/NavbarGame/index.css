@@ -1,0 +1,56 @@
+.navGame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 10px;
+  background-color: var(--primary-color);
+  height: var(--navbar-height-gamePage);
+  transition: margin-top 0.3s ease;
+  will-change: margin-top;
+  margin-top: -64px;
+  animation: topToBottom 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.navGame.active {
+  margin-top: 0;
+}
+
+.navGame.active + .poker {
+  min-height: calc(100vh - var(--navbar-height-gamePage));
+}
+
+.navGame-right {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.navGame-right > span {
+  margin-left: 10px;
+}
+
+.navGame-left {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navGame-left > span {
+  font-weight: 500;
+  margin-left: 10px;
+  color: var(--secondary-color);
+  user-select: none;
+  font-size: 28px;
+}
+
+.navGame-left > img {
+  width: 50px;
+}

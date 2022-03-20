@@ -1,0 +1,25 @@
+.user-header {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 1;
+  background: var(--secondary-color);
+  width: calc(100% - var(--navbar-width));
+  height: 50px;
+  animation: topToBottom 0.3s ease;
+}
+
+.user-header-input {
+  margin-right: 14px;
+  background-color: transparent;
+}
+
+.user-list {
+  padding: 65px 5px 0;
+  animation: rightToLeft 0.3s ease;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
